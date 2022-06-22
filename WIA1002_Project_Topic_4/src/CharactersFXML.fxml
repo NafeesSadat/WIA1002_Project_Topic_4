@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1435.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="CharactersFXMLController">
+   <children>
+      <Pane layoutX="1429.0" prefHeight="800.0" prefWidth="6.0" />
+      <ImageView fitHeight="807.0" fitWidth="1543.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@AOT_Chracters.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="108.0" layoutY="81.0" prefHeight="23.0" prefWidth="54.0" style="-fx-background-color: black;" text="Name" textFill="#fffafa">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="120.0" prefHeight="23.0" prefWidth="58.0" style="-fx-background-color: black;" text="Height" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="163.0" prefHeight="23.0" prefWidth="58.0" style="-fx-background-color: black;" text="Weight" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="290.0" prefHeight="23.0" prefWidth="90.0" style="-fx-background-color: black;" text="Intelligence" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="204.0" prefHeight="23.0" prefWidth="66.0" style="-fx-background-color: black;" text="Strength" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="248.0" prefHeight="23.0" prefWidth="54.0" style="-fx-background-color: black;" text="Agility" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="333.0" prefHeight="23.0" prefWidth="98.0" style="-fx-background-color: black;" text="Cordination" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="108.0" layoutY="376.0" prefHeight="23.0" prefWidth="90.0" style="-fx-background-color: black;" text="Leadership" textFill="WHITE">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtName" layoutX="207.0" layoutY="80.0" promptText="Enter Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtHeight" layoutX="207.0" layoutY="119.0" promptText="Enter Height">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtIntelligence" layoutX="207.0" layoutY="289.0" promptText="Enter Intelligence">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtLeadership" layoutX="207.0" layoutY="375.0" prefHeight="26.0" prefWidth="159.0" promptText="Enter Leadership">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtCoordination" layoutX="207.0" layoutY="332.0" promptText="Enter Coordination">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtStrength" layoutX="207.0" layoutY="203.0" promptText="Enter Strength">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtWeight" layoutX="207.0" layoutY="162.0" prefHeight="26.0" prefWidth="159.0" promptText="Enter Weight">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="txtAgility" layoutX="207.0" layoutY="247.0" promptText="Enter Agility">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Button layoutX="106.0" layoutY="449.0" mnemonicParsing="false" onAction="#add" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: red;" text="Add">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="txtPrint" editable="false" layoutX="846.0" layoutY="120.0" prefHeight="578.0" prefWidth="347.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextArea>
+      <Button layoutX="213.0" layoutY="449.0" mnemonicParsing="false" onAction="#remove" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: red;" text="Delete">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="916.0" layoutY="718.0" mnemonicParsing="false" onAction="#sort" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: red;" text="Sort">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="choiceBox" layoutX="944.0" layoutY="55.0" prefHeight="0.0" prefWidth="150.0" style="-fx-background-color: #00FFFF;" />
+      <TextArea fx:id="characterPrint" editable="false" layoutX="116.0" layoutY="505.0" prefHeight="200.0" prefWidth="251.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="927.0" layoutY="33.0" prefHeight="23.0" prefWidth="183.0" style="-fx-background-color: yellow;" text="Select Sorting Attributes">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="showAll" editable="false" layoutX="409.0" layoutY="80.0" prefHeight="616.0" prefWidth="347.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="485.0" layoutY="718.0" mnemonicParsing="false" onAction="#show" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: red;" text="Show">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="212.0" layoutY="718.0" mnemonicParsing="false" onAction="#clearCharPrint" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: red;" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="1090.0" layoutY="718.0" mnemonicParsing="false" onAction="#cleartxtPrint" prefHeight="0.0" prefWidth="58.0" style="-fx-background-color: red;" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="searchBox" layoutX="1285.0" layoutY="92.0" prefHeight="26.0" prefWidth="90.0" style="-fx-background-color: #00FFFF;" />
+      <TextField fx:id="searchField" layoutX="1250.0" layoutY="67.0" prefHeight="26.0" prefWidth="162.0" promptText="Select Searching Attributes" />
+      <Button layoutX="1304.0" layoutY="271.0" mnemonicParsing="false" onAction="#search" style="-fx-background-color: red;" text="Search">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="637.0" layoutY="718.0" mnemonicParsing="false" onAction="#clearShowAll" prefHeight="27.0" prefWidth="58.0" style="-fx-background-color: red;" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="searchArea" editable="false" layoutX="1261.0" layoutY="143.0" prefHeight="106.0" prefWidth="139.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+      <Button layoutX="307.0" layoutY="449.0" mnemonicParsing="false" onAction="#clearTextFields" prefHeight="26.0" prefWidth="58.0" style="-fx-background-color: red;" text="Clear">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToMainMenu" style="-fx-background-color: red;" text="Main Menu">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="451.0" layoutY="45.0" prefHeight="23.0" prefWidth="263.0" style="-fx-background-color: yellow;" text="Press Show To Display Characters">
+         <font>
+            <Font name="Baskerville Old Face" size="19.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="sortingValues" layoutX="943.0" layoutY="91.0" prefHeight="0.0" prefWidth="150.0" style="-fx-background-color: #00FFFF;" />
+   </children>
+</AnchorPane>
