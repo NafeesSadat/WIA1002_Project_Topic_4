@@ -20,7 +20,7 @@ public class Song {
 
     public Song() {
         try {
-            this.file = new File("https://github.com/NafeesSadat/WIA1002_Project_Topic_4/blob/67ba15f4a62fb8afbcc61f3479a17dce8fc08a81/WIA1002_Project_Topic_4/src/Attack_ON_Titan.wav");
+            this.file = new File("WIA1002_Project_Topic_4/src/Attack_ON_Titan.wav");
             this.audioStream = null;
             try {
                 this.audioStream = AudioSystem.getAudioInputStream(file);
