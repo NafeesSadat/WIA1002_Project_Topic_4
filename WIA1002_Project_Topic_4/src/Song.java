@@ -20,7 +20,8 @@ public class Song {
 
     public Song() {
         try {
-            this.file = new File("WIA1002_Project_Topic_4//src//Attack_ON_Titan.wav");
+            //Edit the Attack_ON_Titan.wav file path below to run your program.
+            this.file = new File("C://Users//User//Downloads//Attack_ON_Titan.wav");
             this.audioStream = null;
             try {
                 this.audioStream = AudioSystem.getAudioInputStream(file);
