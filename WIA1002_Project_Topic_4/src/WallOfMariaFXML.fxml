@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="551.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WallOfMariaFXMLController">
+   <children>
+      <ImageView fitHeight="646.0" fitWidth="1033.0" layoutX="-66.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@AOT_WallOfMaria.jpg" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="limit" alignment="CENTER" layoutX="423.0" layoutY="113.0" promptText="Enter layer number!">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="numString" alignment="CENTER" layoutX="423.0" layoutY="176.0" promptText="Enter brick edges!">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <TextField fx:id="ans" alignment="CENTER" editable="false" layoutX="423.0" layoutY="430.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></TextField>
+      <Label fx:id="text" layoutX="373.0" layoutY="149.0" style="-fx-background-color: orange;" text="Enter brick edges of layer 1">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font></Label>
+      <Button fx:id="enterClear" alignment="CENTER" layoutX="480.0" layoutY="482.0" mnemonicParsing="false" onAction="#enter" style="-fx-background-color: purple;" text="Enter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label fx:id="ansText" alignment="CENTER" layoutX="322.0" layoutY="394.0" prefHeight="20.0" prefWidth="362.0" style="-fx-background-color: yellow;">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Label layoutX="390.0" layoutY="27.0" prefHeight="34.0" prefWidth="226.0" style="-fx-background-color: yellow;" text="Wall of Maria">
+         <font>
+            <Font name="Algerian" size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="text1" layoutX="378.0" layoutY="83.0" style="-fx-background-color: orange;" text="Enter The Number of layers">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#changeToMainMenu" style="-fx-background-color: red;" text="Main Menu">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="407.0" layoutY="209.0" style="-fx-background-color: orange;" text="Brick edges of layer ">
+         <font>
+            <Font name="Algerian" size="17.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="textArea" editable="false" layoutX="403.0" layoutY="240.0" prefHeight="130.0" prefWidth="200.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextArea>
+   </children>
+</AnchorPane>

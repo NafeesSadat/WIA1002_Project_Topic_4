@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="1156.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainMenuFXMLController">
+   <children>
+      <ImageView fitHeight="713.0" fitWidth="1156.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@AOT%20MainMenu.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="463.0" layoutY="40.0" style="-fx-background-color: black;" text="Welcome to " textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="25.0" />
+         </font>
+      </Label>
+      <Label layoutX="438.0" layoutY="81.0" style="-fx-background-color: black;" text="World of Titans" textFill="WHITE">
+         <font>
+            <Font name="Algerian" size="25.0" />
+         </font>
+      </Label>
+      <Button layoutX="478.0" layoutY="248.0" mnemonicParsing="false" onAction="#changeToAot_Titans" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: purple;" text="Titan Generator" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Button layoutX="478.0" layoutY="311.0" mnemonicParsing="false" onAction="#changeToAot_Scouting" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: purple;" text="Scouting" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="478.0" layoutY="367.0" mnemonicParsing="false" onAction="#changeToAot_BestPath" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: purple;" text="Calculate Best Path" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="478.0" layoutY="425.0" mnemonicParsing="false" onAction="#changeToAot_Cipher" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: purple;" text="Decode Cipher" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="478.0" layoutY="486.0" mnemonicParsing="false" onAction="#changeToAot_WallOfMaria" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: purple;" text="Wall of Maria" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="478.0" layoutY="189.0" mnemonicParsing="false" onAction="#changeToAot_Characters" prefHeight="26.0" prefWidth="126.0" style="-fx-background-color: purple;" text="Add Characters" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="1107.0" layoutY="12.0" mnemonicParsing="false" onAction="#play" prefHeight="26.0" prefWidth="34.0" style="-fx-background-color: purple;" text="On" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button layoutX="1107.0" layoutY="55.0" mnemonicParsing="false" onAction="#stop" style="-fx-background-color: purple;" text="Off" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
