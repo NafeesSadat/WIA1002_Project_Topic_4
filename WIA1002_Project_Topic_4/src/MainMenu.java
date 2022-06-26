@@ -18,7 +18,7 @@ public class MainMenu extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-             //Edit the Attack_ON_Titan.wav file path below to run your program.
+             //Edit the Attack_ON_Titan.wav file path on the Song class to run your program.
             Parent root = FXMLLoader.load(getClass().getResource("MainMenuFXML.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setTitle("Main Menu");
