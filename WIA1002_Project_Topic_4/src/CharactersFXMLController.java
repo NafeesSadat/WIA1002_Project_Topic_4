@@ -104,6 +104,54 @@ public class CharactersFXMLController implements Initializable {
     }
     
     /**
+     * Method to restrict the user to enter only numbers in the text fields
+     */
+    void onlyNumeric(){
+        // force the Agility text field to be numeric only
+        txtAgility.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                txtAgility.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+        });
+        // force the Coordination text field to be numeric only
+        txtCoordination.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                txtCoordination.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+        });
+        // force the Height text field to be numeric only
+        txtHeight.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                txtHeight.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+        });
+        // force the Intelligence text field to be numeric only
+        txtIntelligence.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                txtIntelligence.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+        });
+        // force the Leadership text field to be numeric only
+        txtLeadership.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                txtLeadership.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+        });
+        // force the Strength text field to be numeric only
+        txtStrength.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                txtStrength.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+        });
+        // force the Weight text field to be numeric only
+        txtWeight.textProperty().addListener((ObservableValue<? extends String> observable, String oldValue, String newValue) -> {
+            if (!newValue.matches("\\d*")) {
+                txtWeight.setText(newValue.replaceAll("[^\\d]", ""));
+            }
+        });
+    }
+    
+    /**
      * Adds Character to the LinkedList and saves it to the text file
      * @param event
      */
@@ -827,6 +875,7 @@ public class CharactersFXMLController implements Initializable {
              * and assigning them to the relevant variables
              */
             try{
+                onlyNumeric();
                 while (line != null) {
                 String[] attributes = line.split(" ");
                 String name = attributes[0] + " " + attributes[1];
